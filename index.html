@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,6 +48,7 @@
         <section class="secondsection">
             <span class="gray">What I have done so far</span>
             <h1>Past Experiences</h1>
+            <hr>
 
         </section>
 
@@ -57,7 +58,15 @@
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Data Analyst','Data Scientist'],
             typeSpeed: 50,
+            loop:true,
         });
+
+        // setInterval(() => {
+        //     var typed = new Typed('#element', {
+        //     strings: ['Web Developer', 'Data Analyst','Data Scientist'],
+        //     typeSpeed: 50,
+        // });
+        // }, 7000);
     </script>
 </body>
 
