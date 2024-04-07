@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+    scroll-behavior:smooth;
 }
 
 body {
@@ -21,19 +22,19 @@ nav {
     align-items: center;
     background-color: rgb(112, 112, 216);
     height: 80px;
-    
+    z-index: 100;
+
 
 }
-#navbar{
-    /* position: sticky; */
-    top: 0;
-    z-index: 100;
-}
+
+/* #navbar {
+    
+} */
 
 nav ul {
     display: flex;
     justify-content: center;
-    
+
 }
 
 nav ul li {
@@ -91,23 +92,27 @@ nav ul li a:hover {
 main hr {
     border: 0;
     height: 1.2px;
-    margin: 60px 84px;
+    margin: 60px 34px;
     background: violet;
 }
 
 .gray {
     color: gray;
 }
-.leftsection .button{
+
+.leftsection .button {
     color: indigo;
 }
-.leftsection .button a{
+
+.leftsection .button a {
     text-decoration: none;
 }
-.leftsection .button:hover{
+
+.leftsection .button:hover {
     text-decoration: none;
     color: white;
 }
+
 .leftsection .btn {
     padding: 8px 6px;
     color: indigo;
@@ -125,7 +130,8 @@ main hr {
     color: rgb(255, 255, 255);
     border: 1px solid white;
 }
-.button > a{
+
+.button>a {
     padding: 10px 10px;
 }
 
@@ -284,9 +290,11 @@ footer .text {
     text-decoration: none;
     color: blue;
 }
-.footer1{
+
+.footer1 {
     align-items: center;
 }
+
 .footer2 ul li img {
     width: 35px;
     padding: 4px 14px;
@@ -423,3 +431,202 @@ footer .text {
     background-color: #fff;
     border-color: #fff;
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.education,.EXPERIENCE{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.EDU ,.exp{
+    text-align: center;
+    /* margin: 30px; */
+    font-size: 23px;
+    font-family:'Roboto';
+}
+.edu-container ,.exp-container> hr {
+    /* display: grid;
+    justify-content: space-around; */
+    /* margin-top: 60px;
+    margin-right: 300px; */
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.edu-box h2 ,.exp-box h2{
+    margin-bottom: 10px;
+}
+.edu-box p ,.exp-box p{
+    margin-bottom: px;
+}
+.year, .cg {
+    font-weight: bold;
+    margin-bottom:7px ;
+}
+.edu-box:hover,.exp-box:hover{
+    transform: scale(1.055);
+}
+
+.skills h1{
+    text-align: center;
+}
+.Technical-bars h3{
+    margin: 1px;
+}
+.skills{
+    width: 450px;
+    margin: 5px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px rgba(30, 84, 117, 0.728),0 2px 3px rgba(30, 84, 117, 0.849);
+    
+}
+.skills li{
+    margin: 10px 0;
+    padding: 5px;
+    list-style: none;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 15px;
+    border: 1px solidrgba(0,0,0,0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(30, 84, 117, 0.728),0 1px 2px rgba(30, 84, 117, 0.728);
+    transition: all 0.3 cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(30, 84, 117, 0.728),0 10px 10px rgba(30, 84, 117, 0.728);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg , rgb(0, 0, 236)0%,rgba(252,103,103,1)100%);
+    /* position: relative; */
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }   
+}
+.css{
+    width: 80%;
+    animation: css 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }   
+}
+.js{
+    width: 30%;
+    animation: js 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }   
+}
+.rj{
+    width: 30%;
+    animation: js 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes rj {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }   
+}
+.ej{
+    width: 30%;
+    animation: js 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes ej {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }   
+}
+.cpp{
+    width: 70%;
+    animation: cpp 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes cpp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }   
+}
+.java{
+    width: 40%;
+    animation-name: java ;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }   
+}
+.C{
+    width: 50%;
+    animation: c 3s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }   
+}
+.title{
+    padding-left: 100px;
+}
+
+
+
+
+
+
